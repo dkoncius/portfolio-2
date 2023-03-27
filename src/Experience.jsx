@@ -117,7 +117,7 @@ export default function Experience()
         {/* mobile */}
         <MediaQuery maxWidth={500}>
         <primitive
-        object={scene} position={[3, 0, 1]} scale={0.5} rotation-y={-0.75}>
+        object={scene} position={[3, 0, 1]} scale={0.75} rotation-y={-0.75}>
             <Html 
             transform
             wrapperClass="htmlScreen"
@@ -128,18 +128,8 @@ export default function Experience()
                 <iframe src="https://dkoncius.github.io/react-website/" />
             </Html>
         </primitive>
-
-        {/* Text */}
-          <Text
-        {...TEXT_PROPS}
-        position={[3, 2.2, 0.9]}
-        rotation={[ 0, -0.5, 0]}
-        fontSize="0.25"
-        >DEIVIDAS KONCIUS</Text>
         </MediaQuery>
-        
-
-      
+              
         </Center>
         </Float>
         </PresentationControls>
