@@ -15,13 +15,14 @@ export default function Model() {
 
     useEffect(() => {
         const handleResize = () => {
-            const newScale = Math.min(window.innerWidth / 800, window.innerHeight / 1000)
-            setScale(Math.max(newScale, 0.6))
+          const isMobile = window.innerWidth < 600
+          const newScale = Math.min(window.innerWidth / 800, window.innerHeight / 1000)
+          setScale(isMobile ? Math.max(newScale, 0.8) : Math.max(newScale, 0.6))
         }
         window.addEventListener('resize', handleResize)
         handleResize()
         return () => window.removeEventListener('resize', handleResize)
-    }, [])
+      }, [])
 
     useEffect(() => {
         console.log(scale)
