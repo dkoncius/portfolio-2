@@ -45,7 +45,7 @@ export default function Experience()
         
         {/* Responsiviness */}
         {/* Big desktop */}
-        <MediaQuery minWidth={1000}>
+        <MediaQuery minWidth={1001}>
         <primitive object={scene} scale={1.2}>
             <Html 
             transform
@@ -68,7 +68,7 @@ export default function Experience()
         </MediaQuery>
 
         {/* Small desktop */}
-        <MediaQuery minWidth={768} maxWidth={1000}>
+        <MediaQuery minWidth={769} maxWidth={1000}>
         <primitive object={scene}>
             <Html 
             transform
@@ -91,7 +91,7 @@ export default function Experience()
         </MediaQuery>
 
         {/* Tablet */}
-        <MediaQuery minWidth={500} maxWidth={767}>
+        <MediaQuery minWidth={500} maxWidth={768}>
         <primitive
         object={scene} position={[3, 0, 1]}>
             <Html 
