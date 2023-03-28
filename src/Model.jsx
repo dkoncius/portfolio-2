@@ -31,7 +31,7 @@ export default function Model() {
 
   return (
     <>
-       <primitive object={scene} scale={scale - 0.3}>
+       <primitive object={scene} scale={scale - 0.31}>
             <Html 
             transform
             wrapperClass="htmlScreen"
